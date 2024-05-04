@@ -120,12 +120,12 @@ header .fa-bars {
 
 .home .content h3 {
     font-size: 6rem;
-    color: #333;
+    color: #ccc;
 }
 
 .home .content span {
     font-size: 3.5rem;
-    color: var(darkblue);
+    color: whitesmoke;
     padding: 1rem 0;
     line-height: 1.5;
 }
