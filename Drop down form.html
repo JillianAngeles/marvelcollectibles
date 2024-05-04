@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dropdown Form</title>
+<style>
+    .form-container {
+        margin: 0 auto;
+        width: 50%;
+        text-align: center;
+        margin-top: 20vh; /* Adjust this value for vertical positioning */
+    }
+
+    select {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="text"] {
+        padding: 8px;
+        width: 200px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    input[type="submit"] {
+        padding: 8px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+<div class="form-container">
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="Ma. Jillian Marietoni O. Angeles">
+        <br><br>
+        <label for="sections">Section:</label>
+        <select id="sections" name="sections">
+            <option value="Gutenberg">Gutenberg</option>
+            <option value="Reid">Reid</option>
+            <option value="Richter">Richter</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

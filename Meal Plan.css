@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+#box1 {
+width: 200px;
+height: 500px;
+background-color:rgb(59, 220, 0);
+float: left;
+}
+
+#box2 {
+width: 500px;
+height: 200px;
+background-color:rgb(0, 200, 255);
+float: right;
+}
+
+#box3 {
+width: 500px;
+height: 200px;
+background-color:rgb(255, 106, 0);
+float: right;
+
+#box4 {
+width: 500px;
+height: 200px;
+background-color:rgb(229, 255, 0);
+float: right;
+</style>
+</head>
+<body>
+
+<div id="box1">
+</div>
+
+<div id="box2">
+</div>
+
+<div id="box3">
+</div>
+
+<div id="box4">
+</div>
+
+</body>
+</html>

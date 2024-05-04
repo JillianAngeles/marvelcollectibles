@@ -1,0 +1,485 @@
+:root {
+    --cornflowerblue: #6495ED;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: var(--blue);
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(135,206,250, .3);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1)
+}
+
+header .logo {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bolder;
+
+}
+
+header .logo span {
+    color: var(--blue);
+}
+
+header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #fff;
+}
+
+header .navbar a:hover {
+    color: var(--blue)
+}
+
+header .icons {
+    display: flex;
+    align-items: center;
+}
+
+header .icons a {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 1.5rem;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+header .icons a:hover {
+    color: var(--blue);
+}
+
+header #toggler {
+    display: none;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #333;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: .1rem solid rgba(0, 0, 0, .3);
+    display: none;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(MARVEL.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content {
+    max-width: 90rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    color: #333;
+}
+
+.home .content span {
+    font-size: 3.5rem;
+    color: var(darkblue);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p {
+    font-size: 2.5rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(marvelbackground.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.about .content {
+    max-width: 90rem;
+}
+
+.about .box-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.about .content h3 {
+    font-size: 6rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.about .content p {
+    font-size: 2rem;
+    color: #000;
+    padding: 1rem 0;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.shopping-cart {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.shopping-cart .cart-box {
+    max-width: auto;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.shopping-cart .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.shopping-cart h3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.collectible {
+    display: inline-block;
+    width: 250px;
+    margin: 0 20px 40px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.collectible img {
+    width: 100%;
+    height: 250px;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.collectible h4 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.collectible p {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.collectible button {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.collectible button:hover {
+    background-color: #0056b3;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(contact.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact .contact-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.contact .content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact h3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 800px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact textarea {
+    height: 250px;
+}
+
+.contact button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #0056b3;
+}
+
+
+/* media queries */
+@media (max-width: 1200px) {
+    header .navbar a {
+        padding: 1rem;
+    }
+
+    header .icons a {
+        font-size: 2rem;
+    }
+
+    .home .content h3 {
+        font-size: 4rem;
+    }
+
+    .home .content span {
+        font-size: 2rem;
+    }
+
+    .about .content h3 {
+        font-size: 4rem;
+    }
+
+    .about .content p {
+        font-size: 1.8rem;
+    }
+
+    .shopping-cart .collectible {
+        width: 45%;
+        margin: 0 2.5%;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 600px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .contact textarea {
+        height: 200px;
+    }
+
+    .contact-box {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    header .logo {
+        font-size: 2rem;
+    }
+
+    header .fa-bars {
+        display: block;
+        font-size: 2.5rem;
+    }
+
+    header .navbar {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        right: 0;
+        background: #eee;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    }
+
+    header .navbar.active {
+        display: block;
+    }
+
+    header .navbar a {
+        margin: 1rem;
+        padding: 1rem;
+        background: #fff;
+        border: 0.1rem solid rgba(0, 0, 0, 0.1);
+        display: block;
+    }
+
+    .home .content h3 {
+        font-size: 3rem;
+    }
+
+    .home .content span {
+        font-size: 1.5rem;
+    }
+
+    .about .content h3 {
+        font-size: 3rem;
+    }
+
+    .about .content p {
+        font-size: 1.5rem;
+    }
+
+    .shopping-cart .collectible {
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 350px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .contact textarea {
+        height: 200px;
+    }
+
+    .contact-box {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+
+    .home .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home .content span {
+        font-size: 1.2rem;
+    }
+
+    .about .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .about .content p {
+        font-size: 1.2rem;
+    }
+
+    .shopping-cart .collectible {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 200px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    .contact textarea {
+        height: 150px;
+    }
+
+    .contact-box {
+        width: 100%;
+        margin: 0;
+    }
+}

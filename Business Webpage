@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel Collectibles</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <!-- font awsome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header section starts -->
+    <header>
+        <a class="fas fa-bars toggler"></a>
+        <a href="#" class="logo">Marvel Collectibles<span>.</span></a>
+        <nav class="navbar" id="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about </a>
+            <a href="#collectibles">Collectibles</a>
+            <a href="#contact">contact</a>
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-search"></a>
+            <a href="#" class="fas fa-user"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const toggler = document.querySelector(".toggler");
+            const navbar = document.getElementById("navbar");
+
+            toggler.addEventListener("click", function () {
+                navbar.classList.toggle("active");
+            });
+        });
+
+    </script>
+</body>
+
+</html>
